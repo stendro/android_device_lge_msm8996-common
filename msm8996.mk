@@ -152,8 +152,8 @@ PRODUCT_PACKAGES += \
     libqdMetaData.system
 
 # Doze mode
-#PRODUCT_PACKAGES += \
-#    LGDoze
+PRODUCT_PACKAGES += \
+    XiaomiDoze
 
 # DRM
 PRODUCT_PACKAGES += \
