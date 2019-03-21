@@ -151,6 +151,10 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
+# LGE settings
+PRODUCT_PACKAGES += \
+    LGESettings
+
 # Doze mode
 PRODUCT_PACKAGES += \
     LGDoze
@@ -333,6 +337,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+
+    
 # TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
