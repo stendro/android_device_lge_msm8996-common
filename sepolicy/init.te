@@ -15,3 +15,4 @@ allow init property_socket:property_service set;
 
 #allow init firmware_file:dir { create_dir_perms setattr };
 #allow firmware_file rootfs:filesystem associate;
+allow init hal_thermal_hwservice:hwservice_manager { find add }; 
