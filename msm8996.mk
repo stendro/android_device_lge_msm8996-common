@@ -409,3 +409,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 PRODUCT_PACKAGES += \
     SpectrumTile
+
+# GalleryGO
+PRODUCT_PACKAGES += \
+    GalleryGo
