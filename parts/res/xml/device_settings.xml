@@ -68,10 +68,6 @@
                  android:targetClass="org.lineageos.settings.doze.DozeSettingsActivity"/>
         </Preference>
 
-        <SwitchPreference
-            android:key="dlm"
-            android:title="@string/dlm_mode_title" />
-
     </PreferenceCategory>
 
 </PreferenceScreen>

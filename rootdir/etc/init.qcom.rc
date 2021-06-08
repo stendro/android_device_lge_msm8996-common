@@ -250,7 +250,6 @@ on boot
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
     chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
-    chown system system /sys/class/panel/img_tune/daylight_mode
 
     # Touch gestures
     chown system system /sys/devices/virtual/input/lge_touch/keyguard

@@ -65,10 +65,7 @@ public class DeviceSettings extends NodePreferenceActivity {
         tempPreference.setSummary(Battery.getBatteryTemp()+"°C");
         healthPreference.setSummary(Battery.getBatteryHealth());
 
-        mDaylightModeSwitch = (SwitchPreference) findPreference(Constants.KEY_DLM_SWITCH);
-        mDaylightModeSwitch.setEnabled(DaylightModeSwitch.isSupported());
-        mDaylightModeSwitch.setChecked(DaylightModeSwitch.isCurrentlyEnabled(this));
-        mDaylightModeSwitch.setOnPreferenceChangeListener(new DaylightModeSwitch());
+
     }
 
     @Override
