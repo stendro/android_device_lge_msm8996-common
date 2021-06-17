@@ -523,11 +523,26 @@ vendor/lib64/libsensor_user_cal.so
 vendor/lib64/sensors.ssc.so
 vendor/lib64/hw/sensors.vr.so
 
-# Thermal
+# Thermal - from H870 V30B
 vendor/bin/thermal-engine
--vendor/lib/libthermalclient.so
 -vendor/lib64/libthermalclient.so
 vendor/lib64/libthermalioctl.so
+-vendor/lib/libthermalclient.so
+lib64/libthermalcallback.so
+lib64/libthermalservice.so
+lib64/android.hardware.thermal@1.1.so
+vendor/lib/hw/thermal.msm8996.so
+vendor/lib64/hw/thermal.msm8996.so
+vendor/etc/thermal-engine.conf
+vendor/etc/thermal-engine-8996.conf
+vendor/etc/thermal-engine-default.conf
+etc/init/thermalservice.rc
+bin/thermalserviced
+lib/vendor.lge.hardware.thermal@1.0.so
+lib64/vendor.lge.hardware.thermal@1.0.so
+vendor/bin/hw/vendor.lge.hardware.thermal@1.0-service
+vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc
+framework/vendor.lge.hardware.thermal-V1.0-java.jar
 
 # Time services - from OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1903190014:user/release-keys
 vendor/lib64/libtime_genoff.so|e2cef32a79f754b5a17012137cf39f53cd6e3f69

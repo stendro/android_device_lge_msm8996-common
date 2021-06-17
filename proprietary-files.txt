@@ -68,26 +68,6 @@ lib64/hw/lgkm.default.so
 lib64/hw/lgkm.msm8996.so
 lib64/liblgkm.so
 
-# Thermal - from H870 V30B
-vendor/bin/thermal-engine
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
-lib64/libthermalcallback.so
-lib64/libthermalservice.so
-lib64/android.hardware.thermal@1.1.so
-vendor/lib/hw/thermal.msm8996.so
-vendor/lib64/hw/thermal.msm8996.so
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-engine-8996.conf
-vendor/etc/thermal-engine-default.conf
-etc/init/thermalservice.rc
-bin/thermalserviced
-lib/vendor.lge.hardware.thermal@1.0.so
-lib64/vendor.lge.hardware.thermal@1.0.so
-vendor/bin/hw/vendor.lge.hardware.thermal@1.0-service
-vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc
-framework/vendor.lge.hardware.thermal-V1.0-java.jar
 
 # Misc firmware
 etc/firmware/leia_pfp_470.fw:vendor/firmware/leia_pfp_470.fw
