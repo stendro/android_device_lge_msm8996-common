@@ -30,7 +30,7 @@ public class Constants {
     public static final String KEY_FAST_CHARGE = "fast_charge";
 
     //Battery
-    public static final String BATTERY_CYCLE_NODE = "/sys/class/power_supply/bms/battery_cycle";
+    public static final String BATTERY_CYCLE_NODE = "/sys/class/power_supply/bms/cycle_count";
     public static final String BATTERY_HEALTH_NODE = "/sys/class/power_supply/battery/health";
     public static final String BATTERY_TEMP_NODE = "/sys/class/power_supply/bms/temp";
 
