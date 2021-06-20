@@ -46,7 +46,6 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
     private TextView mTextView;
     private View mSwitchBar;
 
-    private SwitchPreference mAlwaysOnDisplayPreference;
 
     private SwitchPreference mPickUpPreference;
     private SwitchPreference mHandwavePreference;
@@ -68,10 +67,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
         boolean dozeEnabled = Utils.isDozeEnabled(getActivity());
 
-        mAlwaysOnDisplayPreference = (SwitchPreference) findPreference(Utils.ALWAYS_ON_DISPLAY);
-        mAlwaysOnDisplayPreference.setEnabled(dozeEnabled);
-        mAlwaysOnDisplayPreference.setChecked(Utils.isAlwaysOnEnabled(getActivity()));
-        mAlwaysOnDisplayPreference.setOnPreferenceChangeListener(this);
+        
 
         PreferenceCategory proximitySensorCategory =
                 (PreferenceCategory) getPreferenceScreen().findPreference(Utils.CATEG_PROX_SENSOR);
@@ -88,12 +84,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mPocketPreference.setEnabled(dozeEnabled);
         mPocketPreference.setOnPreferenceChangeListener(this);
 
-        // Hide AOD if not supported and set all its dependents otherwise
-        if (!Utils.alwaysOnDisplayAvailable(getActivity())) {
-            getPreferenceScreen().removePreference(mAlwaysOnDisplayPreference);
-        } else {
-            proximitySensorCategory.setDependency(Utils.ALWAYS_ON_DISPLAY);
-        }
+
     }
 
     @Override
@@ -127,9 +118,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
 
     @Override
     public boolean onPreferenceChange(Preference preference, Object newValue) {
-        if (Utils.ALWAYS_ON_DISPLAY.equals(preference.getKey())) {
-            Utils.enableAlwaysOn(getActivity(), (Boolean) newValue);
-        }
+        
 
         mHandler.post(() -> Utils.checkDozeService(getActivity()));
 
@@ -144,11 +133,7 @@ public class DozeSettingsFragment extends PreferenceFragment implements OnPrefer
         mTextView.setText(getString(isChecked ? R.string.switch_bar_on : R.string.switch_bar_off));
         mSwitchBar.setActivated(isChecked);
 
-        if (!isChecked) {
-            Utils.enableAlwaysOn(getActivity(), false);
-            mAlwaysOnDisplayPreference.setChecked(false);
-        }
-        mAlwaysOnDisplayPreference.setEnabled(isChecked);
+
 
         mPickUpPreference.setEnabled(isChecked);
         mHandwavePreference.setEnabled(isChecked);
