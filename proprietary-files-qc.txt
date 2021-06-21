@@ -551,8 +551,8 @@ vendor/lib64/libtime_genoff.so|e2cef32a79f754b5a17012137cf39f53cd6e3f69
 vendor/lib/libtime_genoff.so|24f6064818bc53c5ea17a3608766e3cc1e889f64
 
 # Graphics (Vulkan) - from taimen RP1A.201005.004
-vendor/lib/hw/vulkan.msm8996.so|6df3aa5c6badc46bc7a0367b9a62b0ab5b406159
-vendor/lib64/hw/vulkan.msm8996.so|f0cf8bccfcfd0473a2c0322b1274dc4d752f2abb
+lib/vulkan.msm8996.so|6df3aa5c6badc46bc7a0367b9a62b0ab5b406159
+lib64/vulkan.msm8996.so|f0cf8bccfcfd0473a2c0322b1274dc4d752f2abb
 
 # Widevine (DRM) - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
