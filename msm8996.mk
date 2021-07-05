@@ -151,13 +151,6 @@ PRODUCT_PACKAGES += \
     libdisplayconfig \
     libqdMetaData.system
 
-# LGE settings
-PRODUCT_PACKAGES += \
-    LGESettings
-
-# Doze mode
-PRODUCT_PACKAGES += \
-    LGDoze
 
 # DRM
 PRODUCT_PACKAGES += \

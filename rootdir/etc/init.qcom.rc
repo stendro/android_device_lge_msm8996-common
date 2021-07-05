@@ -239,17 +239,6 @@ on boot
 
     # FST Manager uses bond0
     chown wifi wifi /sys/class/net/bond0/bonding/queue_id
-    
-     # LGE Settings
-    chown system system /sys/kernel/fast_charge/force_fast_charge
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_cont
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_enable
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_hue
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_invert_obsolete
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_min
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_sat
-    chown system system /sys/devices/platform/kcal_ctrl.0/kcal_val
 
     # Touch gestures
     chown system system /sys/devices/virtual/input/lge_touch/keyguard
