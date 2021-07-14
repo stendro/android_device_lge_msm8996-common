@@ -398,3 +398,7 @@ PRODUCT_BOOT_JARS += \
 # CryptfsHW
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
+
+# GCam Go
+PRODUCT_PACKAGES += \
+    GCam
