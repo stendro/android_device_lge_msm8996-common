@@ -526,25 +526,25 @@ vendor/lib64/sensors.ssc.so
 vendor/lib64/hw/sensors.vr.so
 
 # Thermal - from H870 V30B
-vendor/bin/thermal-engine
--vendor/lib64/libthermalclient.so
-vendor/lib64/libthermalioctl.so
--vendor/lib/libthermalclient.so
-lib64/libthermalcallback.so
-lib64/libthermalservice.so
-lib64/android.hardware.thermal@1.1.so
-vendor/lib/hw/thermal.msm8996.so
-vendor/lib64/hw/thermal.msm8996.so
-vendor/etc/thermal-engine.conf
-vendor/etc/thermal-engine-8996.conf
-vendor/etc/thermal-engine-default.conf
-etc/init/thermalservice.rc
-bin/thermalserviced
-lib/vendor.lge.hardware.thermal@1.0.so
-lib64/vendor.lge.hardware.thermal@1.0.so
-vendor/bin/hw/vendor.lge.hardware.thermal@1.0-service
-vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc
-framework/vendor.lge.hardware.thermal-V1.0-java.jar
+vendor/bin/thermal-engine|499da2cc8df4a7f3175a4850f1431f3cfc2c5b19
+-vendor/lib64/libthermalclient.so|d5157c52931026bdf59572bf756727405ce4e43b
+vendor/lib64/libthermalioctl.so|cf98704fd9e6218c2eff45212a2588324bb9c951
+-vendor/lib/libthermalclient.so|e1359d2e908ffc538e1dc809cf62f923cf31470d
+lib64/libthermalcallback.so|4d4c90d6181c15102c5c9f841d808060d621d05b
+lib64/libthermalservice.so|7bd9522afc27831d9ea05be9bda9e9f8b16cf84b
+lib64/android.hardware.thermal@1.1.so|ea3c292e405ebf11db52f18ae7cda19cdbdafc2d
+vendor/lib/hw/thermal.msm8996.so|e068f69a52c1cfcc878ecf76f95e726e7c17a2f5
+vendor/lib64/hw/thermal.msm8996.so|8bd8120b7cce0f7980e219b422ccf23891d2bb02
+vendor/etc/thermal-engine.conf|c6c9312b7c7b52926cf7d0fc9bff933d90967100
+vendor/etc/thermal-engine-8996.conf|49ff6abf646a15cab67499a52500f230fa4c5917
+vendor/etc/thermal-engine-default.conf|be9788b80617b5e18b3dcc3c91ada23a720616e3
+etc/init/thermalservice.rc|494b66d008a8993db0caf0ced24fd027a32996ba
+bin/thermalserviced|ba35f197f3374c959f9e4a056f41f24a9cfab296
+lib/vendor.lge.hardware.thermal@1.0.so|c69a5175d3f0469b34a712b5a258234b9bb5c039
+lib64/vendor.lge.hardware.thermal@1.0.so|61c08fdabb838912064a88485050a44d6f6d5608
+vendor/bin/hw/vendor.lge.hardware.thermal@1.0-service|47fa052ce9496138adda8dd5ddbe814738fac5d3
+vendor/etc/init/vendor.lge.hardware.thermal@1.0-service.rc|c04eca33e0f3d064e57fb856de089dcb9d104053
+framework/vendor.lge.hardware.thermal-V1.0-java.jar|c104775246037924d40c5c83df135983b1d129e4
 
 # Time services - from OnePlus/OnePlus3/OnePlus3:9/PKQ1.181203.001/1903190014:user/release-keys
 vendor/lib64/libtime_genoff.so|e2cef32a79f754b5a17012137cf39f53cd6e3f69
@@ -556,8 +556,8 @@ lib64/vulkan.msm8996.so|f0cf8bccfcfd0473a2c0322b1274dc4d752f2abb
 
 # Widevine (DRM) - from daisy - daisy_sprout:10/QKQ1.191002.002/V11.0.7.0.QDLMIXM
 vendor/bin/hw/android.hardware.drm@1.2-service.widevine|e130b8f1c8d46d8a185b00cba5ff8a2a871ee94c
-vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|68767969f86126ada017fc09af151e299db651d5
-vendor/lib64/libwvhidl.so|d02a20d8e95e64c391e0af86a32dad869ceeb3b4
+vendor/etc/init/android.hardware.drm@1.2-service.widevine.rc|f206aecdd6843795f6448bb6d44d2244b3e48815
+vendor/lib64/libwvhidl.so|7e56738c6cbec4d6a895f521ac6bef381271f2eb
 
 # WiFi Display -- From daisy_global_images_V11.0.17.0.QDLMIXM_20210115.0000.00_10.0_924a02b328
 bin/wfdservice|934817e5689fe6f8b54032902de58c203b8ec2e7
