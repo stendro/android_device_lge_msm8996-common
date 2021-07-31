@@ -343,5 +343,14 @@
         <item>org.lineageos.snap/com.android.camera.SetActivitiesCameraReceiver</item>
         <item>com.android.camera2/com.android.camera.SetActivitiesCameraReceiver</item>
     </string-array>
+    <!-- Whether the always on display mode is available. -->
+    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+
+    <!-- Control whether the always on display mode is enabled by default. This value will be used
+         during initialization when the setting is still null. -->
+    <bool name="config_dozeAlwaysOnEnabled">false</bool>
+
+     <!-- If true, the display will be shifted around in ambient mode. -->
+    <bool name="config_enableBurnInProtection">true</bool>
 
 </resources>
