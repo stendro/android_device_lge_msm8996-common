@@ -406,3 +406,6 @@ PRODUCT_PACKAGES += \
 # Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.spectrum.profile=0
+
+PRODUCT_PACKAGES += \
+    SpectrumTile

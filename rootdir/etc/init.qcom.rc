@@ -188,8 +188,8 @@ on boot
     chown system system /sys/class/leds/green/blink
     chown system system /sys/class/leds/blue/blink
 
-    #Disable spectrum on boot
-    setprop spectrum.support 0
+    # Enable spectrum on boot
+    setprop spectrum.support 1
 
     chmod 0444 /sys/devices/platform/msm_hsusb/gadget/usb_state
 
