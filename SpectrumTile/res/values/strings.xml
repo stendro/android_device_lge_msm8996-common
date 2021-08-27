@@ -14,9 +14,9 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
     <string name="app_name">Performance Tile</string>
     <string name="profiles_tile_label">Performance profiles</string>
-    <string name="power_save_profile_text">Power save</string>
+    <string name="efficiency_profile_text">Efficiency</string>
     <string name="balanced_profile_text">Balanced</string>
     <string name="high_performance_profile_text">Performance</string>
-    <string name="bias_power_save_profile_text">Efficiency</string>
+    <string name="ultra_power_save_profile_text">Ultra Power Save</string>
     <string name="gaming_profile_text">Gaming</string>
 </resources>

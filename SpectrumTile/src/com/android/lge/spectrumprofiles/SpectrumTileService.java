@@ -37,7 +37,7 @@ public class SpectrumTileService extends TileService {
 
 	int currentState = SpectrumTileService.getintProp(SPECTRUM_PROP, 0);
         int nextState;
-        if (currentState == 4) {
+        if (currentState == 3) {
             nextState = 0;
         } else {
             nextState = currentState + 1;
@@ -57,14 +57,11 @@ public class SpectrumTileService extends TileService {
 		getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_notification_profile_high));
 		getQsTile().setLabel(getString(R.string.high_performance_profile_text));
 	} else if (currentState == 2){
-		getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_profile_power_save));
-		getQsTile().setLabel(getString(R.string.power_save_profile_text));
-	} else if (currentState == 3){
-		getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_gaming_notif));
-		getQsTile().setLabel(getString(R.string.gaming_profile_text));
+                getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_profile_power_save));
+                getQsTile().setLabel(getString(R.string.ultra_power_save_profile_text));
 	} else {
-		getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_profile_bias_power_save));
-		getQsTile().setLabel(getString(R.string.bias_power_save_profile_text));
+                getQsTile().setIcon(Icon.createWithResource(this, R.drawable.ic_profile_efficiency));
+                getQsTile().setLabel(getString(R.string.efficiency_profile_text));
 	}
 	getQsTile().updateTile();
   }
