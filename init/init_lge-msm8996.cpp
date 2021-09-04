@@ -77,7 +77,23 @@ static void workaround_snet_properties() {
     }
 }
 
+static void set_build_fingerprint(const char *fingerprint){
+    property_override("ro.vendor.build.fingerprint", fingerprint);
+    property_override("ro.bootimage.build.fingerprint", fingerprint);
+    property_override("ro.system.build.fingerprint", fingerprint);
+    property_override("ro.build.fingerprint", fingerprint);
+    property_override("ro.odm.build.fingerprint", fingerprint);
+    property_override("ro.product.build.fingerprint", fingerprint);
+    property_override("ro.system_ext.build.fingerprint", fingerprint);
+}
+
+static void set_build_description(const char *description){
+    property_override("ro.build.description", description);
+}
+
 void vendor_load_properties()
 {
     workaround_snet_properties();
+    set_build_fingerprint("google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys");
+    set_build_description("redfin-user 11 RQ3A.210805.001.A1 7474174 release-keys");
 }
