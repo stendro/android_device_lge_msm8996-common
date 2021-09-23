@@ -398,7 +398,7 @@ PRODUCT_PACKAGES += \
 
 # GCam Go
 PRODUCT_PACKAGES += \
-    GCam
+    GCamGO
 
 # Spectrum
 PRODUCT_PROPERTY_OVERRIDES += \
