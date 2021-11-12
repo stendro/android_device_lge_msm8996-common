@@ -15,6 +15,3 @@ persist.net.doxlat         u:object_r:vendor_xlat_prop:s0
 
 # Timekeep
 persist.vendor.timeadjust  u:object_r:vendor_timekeep_prop:s0
-
-# Spectrum
-persist.spectrum.profile    u:object_r:spectrum_prop:s0

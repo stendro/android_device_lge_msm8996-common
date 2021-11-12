@@ -8,4 +8,3 @@ allow system_app cnd_core_data_file:file create_file_perms;
 get_prop(system_app, cnd_vendor_prop)
 
 set_prop(system_app, camera_prop)
-set_prop(system_app, spectrum_prop)
