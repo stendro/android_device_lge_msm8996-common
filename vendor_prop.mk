@@ -221,6 +221,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     persist.sensors.wul_delay=3000 \
     persist.sensors.onhand.en=0
 
+# SoC
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.soc.manufacturer=Qualcomm \
+    ro.soc.model=MSM8996
+
 # Tethering
 PRODUCT_PROPERTY_OVERRIDES += \
     net.tethering.noprovisioning=true
