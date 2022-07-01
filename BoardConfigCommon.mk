@@ -104,11 +104,16 @@ AUDIO_FEATURE_ENABLED_EXTN_RESAMPLER := true
 endif
 AUDIO_FEATURE_ENABLED_SND_MONITOR := true
 
-# Bluetooth
+# Bluetooth/FM
 BOARD_HAVE_BLUETOOTH := true
+BOARD_HAVE_BCM_FM := true
 BOARD_HAVE_BLUETOOTH_BCM := true
+BOARD_HAVE_BCM_FM_SYSFS := "/sys/bus/platform/drivers/bcm_ldisc/bcm_ldisc/"
 BOARD_CUSTOM_BT_CONFIG := $(COMMON_PATH)/bluetooth/libbt_vndcfg.txt
 BOARD_BLUETOOTH_BDROID_BUILDCFG_INCLUDE_DIR := $(COMMON_PATH)/bluetooth
+BOARD_BRCM_HCI_NUM := 26
+PRODUCT_COPY_FILES += \
+    $(COMMON_PATH)/bluetooth/bt_vendor.conf:system/etc/bluetooth/bt_vendor.conf
 
 # Camera
 TARGET_LD_SHIM_LIBS := \

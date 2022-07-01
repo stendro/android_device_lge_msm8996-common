@@ -41,6 +41,9 @@ inline const char* BtmGetDefaultName()
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
 
+#define HCILP_INCLUDED FALSE
+#define BT_WAKE_VIA_USERIAL_IOCTL FALSE
+
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 
 #endif
