@@ -1,1 +1,4 @@
 allow ueventd sysfs_devices_fingerprint:file { open read write };
+
+# For BT to access sysfs_bluetooth_writable
+rw_dir_file(ueventd, sysfs_bluetooth_writable)
