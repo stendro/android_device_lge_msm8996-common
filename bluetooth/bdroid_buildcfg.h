@@ -40,11 +40,7 @@ inline const char* BtmGetDefaultName()
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-
-#define BLE_VND_INCLUDED TRUE
-#define HCILP_INCLUDED FALSE
-#define BT_WAKE_VIA_USERIAL_IOCTL FALSE
-#define BTM_AFTER_RESET_TIMEOUT 1
+// #define BLE_VND_INCLUDED TRUE /* Only for BCM4345 ? */
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 
