@@ -40,7 +40,13 @@ inline const char* BtmGetDefaultName()
 
 #define BTM_DEF_LOCAL_NAME BtmGetDefaultName()
 #define BTA_DISABLE_DELAY 1000 /* in milliseconds */
-// #define BLE_VND_INCLUDED TRUE /* Only for BCM4345 ? */
+
+/* These are no longer available I suspect */
+// #define HCILP_INCLUDED FALSE
+// #define BTM_AFTER_RESET_TIMEOUT 1
+
+/* This looks like it can be problematic for some */
+// #define BLE_VND_INCLUDED TRUE
 
 #pragma pop_macro("PROPERTY_VALUE_MAX")
 

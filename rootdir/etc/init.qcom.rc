@@ -592,6 +592,14 @@ on post-fs-data
     chown system system /sys/class/leds/lcd-backlight/thermald_status
     chmod 0644 /sys/class/leds/lcd-backlight/thermald_status
 
+# brcm-uim-sysfs (BT/FM/ANT+)
+service uim /system/vendor/bin/brcm-uim-sysfs
+    class late_start
+    user root
+    group bluetooth net_bt
+    seclabel u:r:uim:s0
+    writepid /dev/cpuset/system-background/tasks
+
 service ssr_setup /system/bin/ssr_setup
     oneshot
     disabled
