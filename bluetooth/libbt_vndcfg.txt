@@ -2,8 +2,8 @@ BLUETOOTH_UART_DEVICE_PORT = "/dev/ttyHS0"
 FW_PATCHFILE_LOCATION = "/system/vendor/firmware/"
 VENDOR_LIB_CONF_FILE = "/system/etc/bluetooth/bt_vendor.conf"
 UART_TARGET_BAUD_RATE = 3000000
-LPM_IDLE_THRESHOLD = 48
-LPM_HC_IDLE_THRESHOLD = 24
+# LPM_IDLE_THRESHOLD = 48
+# LPM_HC_IDLE_THRESHOLD = 24
 LPM_BT_WAKE_POLARITY = 0
 LPM_HOST_WAKE_POLARITY = 0
 # For LG's brcm-v4l2 + bluetooth-pm, none of these
