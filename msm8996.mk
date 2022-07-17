@@ -331,8 +331,6 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
-
-    
 # TimeKeep
 PRODUCT_PACKAGES += \
     timekeep \
@@ -366,8 +364,7 @@ PRODUCT_PACKAGES += \
 
 # USB
 PRODUCT_PACKAGES += \
-    android.hardware.usb@1.0-service \
-    com.android.future.usb.accessory
+    android.hardware.usb@1.0-service
 
 # Vibrator
 PRODUCT_PACKAGES += \
