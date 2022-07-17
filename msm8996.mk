@@ -270,8 +270,7 @@ PRODUCT_COPY_FILES += \
 
 # OMX
 PRODUCT_PACKAGES += \
-    libc2dcolorconvert \
-    libhypv_intercept \
+    libextmedia_jni \
     libmm-omxcore \
     libOmxAacEnc \
     libOmxAmrEnc \
@@ -281,9 +280,7 @@ PRODUCT_PACKAGES += \
     libOmxVdec \
     libOmxVdecHevc \
     libOmxVenc \
-    libOmxVidcCommon \
-    libstagefrighthw \
-    libstagefright_soft_flacdec
+    libstagefrighthw
 
 # Power
 PRODUCT_PACKAGES += \
